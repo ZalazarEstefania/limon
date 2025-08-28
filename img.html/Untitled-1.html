@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+  <style>
+    .card {
+      width: 400px;
+      margin: 40px auto;
+      border-radius: 20px;           /* bordes redondeados */
+      overflow: hidden;              /* el header respeta el borde */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      background: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      background-color: #00bcd4;
+      height: 150px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .circle-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      position: absolute;
+      bottom: -60px;
+    }
+
+    main {
+      margin-top: 80px; /* espacio para la imagen */
+      padding: 20px;
+      text-align: center;
+    }
+
+    main p {
+      max-width: 300px;
+      margin: 10px auto;
+      line-height: 1.6;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="header">
+      <img src="tu-imagen.jpg" alt="Foto de perfil" class="circle-img">
+    </div>
+
+    <!-- Contenido principal va en <main> -->
+    <main>
+      <h1>Estefania Zalazar</h1>
+      <p>Bergen, Noruega</p>
+      <p>Diseñadora de UX/UI | Desarrolladora Frontend</p>
+      <p>
+        Apasionada por crear experiencias digitales hermosas y funcionales. 
+        Cuando no está codificando, disfruta explorando los fiordos noruegos 
+        y capturando la belleza de la naturaleza en fotografías.
+      </p>
+    </main>
+  </div>
+
+</body>
+</html>

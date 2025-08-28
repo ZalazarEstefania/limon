@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perfil - Maqueta</title>
+  <style>
+    :root{--accent:#07a7d6;--muted:#6b7280;--card:#ffffff;--border:#e6eef3;--radius:12px;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+    *{box-sizing:border-box}
+    body{margin:0;background:#0b1220;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px}
+    .container{width:100%;max-width:1100px;background:linear-gradient(180deg,#f8fbfd,#fff);border-radius:16px;padding:20px;display:flex;gap:18px;box-shadow:0 12px 30px rgba(2,6,23,0.35)}
+
+    /* left column */
+    .left{flex:1;display:flex;flex-direction:column;gap:14px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;position:relative}
+
+    .cover{height:56px;background:var(--accent);border-top-left-radius:calc(var(--radius) - 2px);border-top-right-radius:calc(var(--radius) - 2px)}
+    .profile-row{display:flex;gap:16px;align-items:flex-start}
+    .avatar{width:72px;height:72px;border-radius:50%;overflow:hidden;border:4px solid #fff;margin-top:-28px;box-shadow:0 6px 18px rgba(2,6,23,0.08);background:#ddd}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    .info h1{margin:6px 0 4px;font-size:20px}
+    .meta{color:var(--muted);font-size:13px;margin-bottom:8px}
+    .bio{color:#334155;font-size:14px;line-height:1.35}
+    .edit{display:inline-block;margin-top:8px;color:var(--accent);text-decoration:none;font-size:13px}
+
+   
+
+    .education{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px;font-size:14px;color:#334155}
+
+    /* right column */
+    .right{width:320px;flex:0 0 320px;display:flex;flex-direction:column;gap:12px}
+    .requests .row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid #f1f5f9}
+    .requests img{width:40px;height:40px;border-radius:6px;object-fit:cover}
+    .actions{margin-left:auto;display:flex;gap:8px}
+    .accept{width:36px;height:36px;border-radius:999px;background:#16a34a;color:#fff;border:0}
+    .reject{width:36px;height:36px;border-radius:999px;background:#ef4444;color:#fff;border:0}
+
+    .connections{list-style:none;padding:0;margin:0}
+    .connections li{display:flex;align-items:center;gap:10px;padding:8px 0;border-top:1px solid #f1f5f9}
+    .connections img{width:36px;height:36px;border-radius:50%;object-fit:cover}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="card">
+        <div class="cover" aria-hidden="true"></div>
+        <div class="profile-row">
+          <div class="avatar"><img src="/mnt/data/1.jpg" alt="avatar"></div>
+          <div class="info">
+            <h1>Linn Olsen</h1>
+            <div class="meta">Bergen, Noruega · Diseñadora de UX/UI | Desarrolladora Frontend</div>
+            <p class="bio">Apasionada por crear experiencias digitales hermosas y funcionales. Cuando no está codificando, disfruta explorando los fiordos noruegos y capturando la belleza de la naturaleza en fotografías.</p>
+            <a class="edit" href="#">Editar perfil</a>
+          </div>
+        </div>
+
+     
+      </div>
+
+      <div class="education card">
+        <strong>Education</strong>
+        <div style="margin-top:8px;color:var(--muted);font-size:13px">Coding Dojo · Bootcamp de Desarrollo Full Stack — Dic 2019 - Mar 2020</div>
+      </div>
+    </div>
+
+    <aside class="right">
+      <div class="card requests">
+        <h3>Solicitudes de Conexión (2)</h3>
+        <div class="row"><img src="/mnt/data/1.jpg" alt="k"><div>Kai Schröder</div><div class="actions"><button class="accept">✓</button><button class="reject">✕</button></div></div>
+        <div class="row"><img src="/mnt/data/2.jpg" alt="a"><div>Amira El-Masry</div><div class="actions"><button class="accept">✓</button><button class="reject">✕</button></div></div>
+      </div>
+
+      <div class="card">
+        <h3>Tus Conexiones (500+)</h3>
+        <ul class="connections">
+          <li><img src="https://media.gettyimages.com/id/910991682/pt/foto/red-haired-woman-in-motion-blurred-motion-long-exposure.jpg?s=612x612&w=0&k=20&c=5lzPLHFM9E7VegA7kDk7QBlYio_9_mye41GxqA2N5yA=" alt="a"><span>Adrien Desplatz</span></li>
+          <li><img src="https://www.facebook.com/photo/?fbid=122212491020106530&set=a.122116630472106530" alt="b"><span>Aarav Patel</span></li>
+          <li><img src="/mnt/data/1.jpg" alt="c"><span>Lina Kovačević</span></li>
+          <li><img src="/mnt/data/2.jpg" alt="d"><span>Mateo Hernández</span></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
